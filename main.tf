@@ -14,12 +14,12 @@ variable "datacenter" {
 
 variable "first_hostname" {
   description = "Hostname of the first virtual instance (small flavor) to be deployed"
-  default     = "debian-smallish"
+#  default     = "debian-smallish"
 }
 
 variable "second_hostname" {
   description = "Hostname of the second virtual instance (medium flavor) to be deployed"
-  default     = "ubuntu-medium"
+#  default     = "ubuntu-medium"
 }
 
 variable "domain" {
