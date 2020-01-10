@@ -1,5 +1,4 @@
 {
-  "terraform_version": "~> 0.11.0",
   "input_datatypes": [
   ],
   "output_datatype": "content_template_output",
@@ -10,10 +9,6 @@
     }
   ],
   "output_groups": [
-    {
-      "name": "content_template_output",
-      "label": "Outputs"
-    }
   ],
   "template_input_params": [
     {
@@ -25,14 +20,13 @@
         "required": true,
         "secured": false,
         "type": "string",
-	      "regex": "^ssh-rsa AAAA[0-9A-Za-z+/]+[=]{0,3}( [^@]+@[^@]+| [^@]+){0,1}$",
         "group": "virtualmachine"
     },
     {
         "description": "SoftLayer datacenter where infrastructure resources will be deployed",
         "hidden": false,
         "immutable": false,
-        "label": "SoftLayer Data Center",
+        "label": "SoftLayer Datacenter",
         "name": "datacenter",
         "required": true,
         "secured": false,
@@ -167,18 +161,30 @@
     },
     {
         "default": "debian-small",
-        "description": "Hostname of the virtual instance (small flavor) to be deployed",
+        "description": "Hostname of the first virtual instance (small flavor) to be deployed",
         "hidden": false,
         "immutable": false,
-        "label": "Hostname",
-        "name": "hostname",
+        "label": "First Hostname",
+        "name": "first_hostname",
         "required": true,
         "secured": false,
         "type": "string",
         "group": "virtualmachine"
     },
     {
-        "default": "sample.com",
+        "default": "ubuntu-medium",
+        "description": "Hostname of the second virtual instance (medium flavor) to be deployed",
+        "hidden": false,
+        "immutable": false,
+        "label": "Second Hostname",
+        "name": "second_hostname",
+        "required": true,
+        "secured": false,
+        "type": "string",
+        "group": "virtualmachine"
+    },
+    {
+        "default": "labs.co.uk",
         "description": "Domain of the virtual instance to be deployed",
         "hidden": false,
         "immutable": false,
@@ -191,4 +197,3 @@
     }
   ]
 }
-
