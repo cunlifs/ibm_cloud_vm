@@ -160,7 +160,7 @@
         "group": "virtualmachine"
     },
     {
-        "default": "debian-small",
+        "default": "debian-vm-1",
         "description": "Hostname of the first virtual instance (small flavor) to be deployed",
         "hidden": false,
         "immutable": false,
@@ -172,7 +172,7 @@
         "group": "virtualmachine"
     },
     {
-        "default": "ubuntu-medium",
+        "default": "ubuntu-vm-1",
         "description": "Hostname of the second virtual instance (medium flavor) to be deployed",
         "hidden": false,
         "immutable": false,
