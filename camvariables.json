@@ -12,6 +12,7 @@
   ],
   "template_input_params": [
     {
+        "default": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5owLHGPdUd0dVJa1vxGrttWmnoAE0MODEs6mInyPJw3xtxNikUYfJGLfzz4rM1hTf+adUJXCXC3+SZXbnOsfmRSaGoavB/Stjp2ow8kkVRCcQ+d+W87mLA4/dghWCLf01XdnZTVqu0xlMe0oyEU63BuLIAulcaQnvgzmWCV/Lx0JfnZkRtvw3Y1js/Q5j2Mnj32+LyCEmqwJpyAR1LnqxArKGSmeE+HBpZUjFf8KD7gR8ftvg3OWVPIJPqyQP9J805vbSYLCRA6DRuCKI88z3JbHFOw6cegAxpDWmvsGIu8oIZqrmWp2MfyAHMGJCpJMAPaDU1RXqqMvx1BmkUS6t stucunliffe@Stus-MacBook-Pro-2.local"
         "description": "Public SSH key used to connect to the virtual guest",
         "hidden": false,
         "immutable": false,
